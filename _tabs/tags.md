@@ -1,6 +1,6 @@
 ---
 title: teste
 layout: tags
-icon: fas fa-tags
+icon:  	 fa fa-tags
 order: 2
 ---

@@ -10,6 +10,14 @@
   icon: "fas fa-envelope"
   noblank: true # open link in current tab
 
+- type: goodreads
+  icon : fab fa-goodreads-g
+  url :  https://www.goodreads.com/user/show/170042553-matheus-santos
+
+- type : letterboxf
+  icon: fa-brands fa-letterboxd
+  url: https://letterboxd.com/Matheuszz__/
+
 #- type: rss
 #  icon: "fas fa-rss"
 #  noblank: true
