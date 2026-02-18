@@ -54,7 +54,7 @@ layout: compress
 
 <!--
 gif wooper adicionado 
--->
+
           <section id="gif-widget" class="access mb-4">
             <h3 class="panel-heading"></h3> 
              <div class="panel-content d-flex justify-content-center">
@@ -67,44 +67,80 @@ gif wooper adicionado
           </div>
           </div>
             </section>
+-->
+<section id="custom-widget" style="margin-bottom: 1.5rem; max-width: 300px;">
 
-<section id="custom-widget" class="access mb-4" style="all: unset; display: block; margin-bottom: 1.5rem;">
-  <h2 class="panel-heading" style="font-size: 0.75rem; font-weight: 600; color: #6c757d; text-transform: uppercase; margin-bottom: 0.5rem;">
-    OLÁ AMIGOS
-  </h2> 
-  
+
   <div style="
-    background-color: transparent !important; 
-    border: 1px solid rgba(255, 255, 255, 0.1); 
-    border-radius: 12px; 
-    padding: 1rem;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column; /* Alinha os itens em coluna */
+    align-items: center;
+    background:transparent;
+    border: transparent;
+    border-radius: 14px;
+    padding: 1.2rem;
+    gap: 1rem;
   ">
-    <p style="font-size: 0.875rem; margin-bottom: 0; ;">
-        <strong >oii!</strong><br>
-        nao<br> 👇 
-    </p>
-    
-    <hr style="margin: 0.75rem 0; border: 0; border-top: 1px solid rgba(255,255,255,0.1);">
-    
-    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" 
-       target="_blank" 
-       rel="noopener noreferrer" 
-       style="
-         display: block;
-         width: 100%;
-         padding: 0.5rem;
-         text-align: center;
-         
-         border-radius: 50px;
-         text-decoration: none;
-         font-size: 0.8rem;
-         transition: 0.3s;
-       ">
-       clique se tiver coragem
-    </a>
+
+    <div id="wooper-gif" class="gif-box-large"></div>
+
+    <div style="width: 100%; text-align: center;">
+      <p style="
+        font-size: 0.9rem;
+        margin-bottom: 12px;
+        color: #adadad;
+        line-height: 1.4;">
+        <strong style="color: #ffffff;"></strong><br>
+        Cantina Band - John Williams 🎵
+      </p>
+
+      <audio id="audio-player" controls style="
+        width: 100%;
+        height: 30px;
+        filter: invert(100%) opacity(0.8);
+        border-radius: 12px;
+      ">
+        <source src="/assets/audio/cantina.mp3" type="audio/mpeg">
+        Seu navegador não suporta áudio.
+      </audio>
+
+    </div>
+
   </div>
 </section>
+
+<style>
+/* Estilo do GIF ampliado para o topo */
+.gif-box-large {
+  width: 250px;
+  height: 250px;
+  border-radius: 12px; /* Deixa o Wooper em um círculo, opcional */
+  border: 2px solid rgba(255,255,255,0.1);
+  background: transparent url("/assets/img/gif/wooper-static.png") center/contain no-repeat;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+/* Classe de animação aplicada pelo JS */
+.is-playing {
+  background-image: url("/assets/img/gif/wooper-bounce.gif") !important;
+  border-color: #007bff; /* Dá um brilho azul quando toca */
+  transform: scale(1.05);
+}
+</style>
+
+<script>
+  (function() {
+    const audio = document.getElementById('audio-player');
+    const wooper = document.getElementById('wooper-gif');
+
+    if (audio && wooper) {
+      audio.onplay = () => wooper.classList.add('is-playing');
+      audio.onpause = () => wooper.classList.remove('is-playing');
+      audio.onended = () => wooper.classList.remove('is-playing');
+    }
+  })();
+</script>
 
 
 
