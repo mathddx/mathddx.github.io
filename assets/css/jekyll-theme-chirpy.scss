@@ -31,6 +31,7 @@ body, html, h1, h2, h3, h4, h5, h6, p, a, span, .post-title, .post-content, .sid
   background-position: center !important;
   background-repeat: no-repeat !important;
   
+ 
   /* Opcional: Adicionar uma leve camada escura para o texto não sumir no brilho das estrelas */
 
 }
@@ -74,52 +75,15 @@ body, html, h1, h2, h3, h4, h5, h6, p, a, span, .post-title, .post-content, .sid
   }
 }
 
-/* Customização de cores da Sidebar (Esquerda) */
-#sidebar {
-  /* 1. Muda a cor do Nome (Título) e da Descrição */
-  .profile-wrapper {
-    a, .site-subtitle {
-      color: #e86efe  !important; /* Cor do seu nome e subtítulo */
-    }
-  }
 
-  /* 2. Muda a cor dos itens do Menu (Texto e Ícones) */
-  .nav-item {
-    a {
-      color: #e86efe !important; /* Cor dos itens não selecionados */
-      
-      i { 
-        color: #e86efe !important; /* Cor específica apenas para os ícones */
-      }
-    }
 
-    /* Cor quando você passa o mouse ou quando a página está ativa */
-    &.active a, a:hover {
-      color: #ffffff !important;
-      
-      i {
-        color: #ffffff !important;
-      }
-    }
-  }
-
-  /* 3. Ícones de redes sociais lá no rodapé da sidebar */
-  .sidebar-bottom {
-    a, i {
-      color: #e86efe !important;
-    }
-    
-    a:hover i {
-      color: #ffffff !important;
-    }
-  }
-}
+/* --- CONFIGURAÇÃO GLOBAL DA SIDEBAR (MODO DINÂMICO) --- */
 
 
 /* Customização da Barra Superior (Topbar) */
 #topbar-wrapper {
   /* 1. O fundo (pode ser o GIF de galáxia ou uma cor sólida) */
-  background-image: url('https://media1.tenor.com/m/FU6j1qm4518AAAAC/skeleton-meme.gif') !important;
+  background-image: url('https://media1.tenor.com/m/nL3YvL_qK3AAAAAd/skeleton-skeleton-meme.gif')!important;
   background-size: cover !important;
   background-position: center !important;
   
@@ -152,19 +116,4 @@ html[data-mode='light'] #topbar i {
 html[data-mode='dark'] #topbar i {
   color: #ffffff !important;
 }
-}
-
-/* Unificar fundo da busca */
-#search-input {
-  background: transparent !important; /* Remove o fundo cinza quadrado */
-  border: none !important;
-}
-
-#search {
-  background-color: #1b1b1e !important; /* Cor escura do fundo */
-  border-radius: 20px !important;
-  border: 1px solid rgba(255, 255, 255, 0.1) !important;
-  display: flex;
-  align-items: center;
-  padding: 0 10px;
 }
