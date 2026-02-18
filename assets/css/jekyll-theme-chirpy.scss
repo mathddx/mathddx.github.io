@@ -40,3 +40,117 @@ body, html, h1, h2, h3, h4, h5, h6, p, a, span, .post-title, .post-content, .sid
   position: relative;
   z-index: 1;
 }
+
+.gif-container {
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 1px solid var(--main-border-color);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  line-height: 0; /* Remove espaços extras sob a imagem */
+
+  img {
+    width: 100%;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .active-gif {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0; /* Esconde o GIF */
+  }
+
+  /* Quando o mouse passa por cima */
+  &:hover {
+    .static-frame {
+      opacity: 0; /* Esconde a foto */
+    }
+    .active-gif {
+      opacity: 1; /* Mostra o GIF */
+    }
+  }
+}
+
+/* Customização de cores da Sidebar (Esquerda) */
+#sidebar {
+  /* 1. Muda a cor do Nome (Título) e da Descrição */
+  .profile-wrapper {
+    a, .site-subtitle {
+      color: #e86efe  !important; /* Cor do seu nome e subtítulo */
+    }
+  }
+
+  /* 2. Muda a cor dos itens do Menu (Texto e Ícones) */
+  .nav-item {
+    a {
+      color: #e86efe !important; /* Cor dos itens não selecionados */
+      
+      i { 
+        color: #e86efe !important; /* Cor específica apenas para os ícones */
+      }
+    }
+
+    /* Cor quando você passa o mouse ou quando a página está ativa */
+    &.active a, a:hover {
+      color: #ffffff !important;
+      
+      i {
+        color: #ffffff !important;
+      }
+    }
+  }
+
+  /* 3. Ícones de redes sociais lá no rodapé da sidebar */
+  .sidebar-bottom {
+    a, i {
+      color: #e86efe !important;
+    }
+    
+    a:hover i {
+      color: #ffffff !important;
+    }
+  }
+}
+
+
+/* Customização da Barra Superior (Topbar) */
+#topbar-wrapper {
+  /* 1. O fundo (pode ser o GIF de galáxia ou uma cor sólida) */
+  background-image: url('https://media1.tenor.com/m/FU6j1qm4518AAAAC/skeleton-meme.gif') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  
+  /* 2. Vidro fosco para não ficar pesado visualmente */
+  backdrop-filter: blur(10px) !important;
+  background-color: rgba(27, 27, 30, 0.7) !important; 
+
+  /* 3. Linha fina na parte de baixo para separar do conteúdo */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+  
+  /* 4. Altura e preenchimento */
+  height: 2rem !important; 
+}
+
+/* Ajuste das cores dos textos dentro da Topbar (Início, Busca) */
+#topbar {
+  #breadcrumb, #topbar-title, .btn-link {
+    color: #ffffff !important;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  }
+
+ /* Ícone da busca dinâmico */
+
+/* Cor para o modo claro */
+html[data-mode='light'] #topbar i {
+  color: #000000 !important;
+}
+
+/* Cor para o modo escuro */
+html[data-mode='dark'] #topbar i {
+  color: #ffffff !important;
+}
+}
+
