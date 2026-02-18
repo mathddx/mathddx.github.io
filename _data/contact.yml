@@ -6,17 +6,21 @@
 - type: twitter
   icon: "fa-brands fa-x-twitter"
 
-- type: email
-  icon: "fas fa-envelope"
-  noblank: true # open link in current tab
+#- type: email
+#  icon: "fas fa-envelope"
+#  noblank: true # open link in current tab
 
 - type: goodreads
   icon : fab fa-goodreads-g
   url :  https://www.goodreads.com/user/show/170042553-matheus-santos
 
-- type : letterboxf
+- type : letterboxd
   icon: fa-brands fa-letterboxd
   url: https://letterboxd.com/Matheuszz__/
+
+- type : spotify
+  icon:  	fab fa-spotify
+  url: https://open.spotify.com/user/p8pt7glnkbm7f9tjh58soyykf?si=278241035de64b8f
 
 #- type: rss
 #  icon: "fas fa-rss"
