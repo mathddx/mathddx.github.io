@@ -1,0 +1,42 @@
+---
+---
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* 1. Importando a Noto Sans */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* 2. Aplicação Global da Fonte */
+:root {
+  --main-font-family: 'Noto Sans', sans-serif !important;
+  --heading-font-family: 'Noto Sans', sans-serif !important;
+}
+
+body, html, h1, h2, h3, h4, h5, h6, p, a, span, .post-title, .post-content, .sidebar {
+  font-family: 'Noto Sans', sans-serif !important;
+}
+
+/* Customização da Barra Lateral (Sidebar) */
+#sidebar {
+  /* Substitua a URL abaixo pelo caminho da sua imagem ou GIF */
+  background-image: url('https://media0.giphy.com/media/v1.Y2lkPTZjMDliOTUyM3A5ZWowbWFkbTN0bGo0MzZ1NXplM2tzdGVsNzhxOXZxNjQ1MWk4aSZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/Ea0Y4le7n28Lh4vMMJ/200w.gif') !important;
+  
+  /* Ajustes para a imagem cobrir tudo e não repetir */
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  
+  /* Opcional: Adicionar uma leve camada escura para o texto não sumir no brilho das estrelas */
+
+}
+
+/* Garante que os elementos da sidebar fiquem acima da camada escura */
+#sidebar > * {
+  position: relative;
+  z-index: 1;
+}
