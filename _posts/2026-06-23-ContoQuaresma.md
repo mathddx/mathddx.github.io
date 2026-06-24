@@ -1,7 +1,7 @@
 ---
 title: "Conto de quaresma"
 date: 2026-06-23
-categories: [teste]
+categories: [Autorais]
 tags: [livros, escrita]
 #author: "Leo"
 ---

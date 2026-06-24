@@ -1,11 +1,12 @@
 ---
 title: "Boa Noite Samuel"
 date: 2026-06-23
-categories: [teste]
+categories: [Autorais]
 tags: [livros, escrita]
 author: "Luizo"
 ---
 **Se levanta, Samuel**
+
 Samuel acordara em mais uma noite tortuosa com um forte pulo na cama, virou-se para o
 lado, como quem grunhia consigo mesmo por acordar assustado e sozinho ainda no meio da noite.
 Respirou forte mais um pouco com a boca aberta, e finalmente, enxugou seus olhos cansados. Sua
