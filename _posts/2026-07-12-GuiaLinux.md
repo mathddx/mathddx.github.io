@@ -23,7 +23,7 @@ Depois disso acredito que é só configurar coisas simples tipo atalhos para tro
 
 ## Sway   
 
-Pra o sway, já tem boa parte dos arquivos de config salvos no pendrive, futuramente serão adicionados aqui (quando eu aprender a colocar arquivos para download no site), mas novamente, é so seguir os passos desse [vídeo](https://youtu.be/QAmTUkzpIiM?si=EL7lntQo0MLtZx9h), deve ser mais simples pois já está tudo configurado nos dotfiles, a única coisa que imagino que seja necessária para configuração seja a fonte para que os ícones apareçam, e os pacotes para configuração de wifi e opções de log-out. 
+Pra o sway, já tem boa parte dos arquivos de config salvos no pendrive, futuramente serão adicionados aqui (quando eu aprender a colocar arquivos para download no site), mas novamente, é so seguir os passos desse [vídeo](https://youtu.be/QAmTUkzpIiM?si=EL7lntQo0MLtZx9h), deve ser mais simples pois já está tudo configurado nos dotfiles, a única coisa que imagino que seja necessária para configuração seja a fonte pa ra que os ícones apareçam, e os pacotes para configuração de wifi e opções de log-out. 
 
 ## Konsave
 
@@ -38,3 +38,26 @@ konsave -a
 Para atualizar o konsave, basta seguir esse [vídeo](https://www.youtube.com/watch?v=jEVcrPMfXGU&t=80s).
 
 Agora, é só simplesmente formatar o thinkpad de novo, ou então tentar desfazer o btrfs device add, mas não deu certo das últimas vezes.
+
+## Conclusão
+No fim, o que foi feito foi adicionar um hd de 1tb, sem misturar ambos pelo btrfs add, pois iria diminuir a velocidade do sistema em geral. 
+Sendo assim, foi criada uma pasta no HD
+
+1. Criação da pasta no HD:
+```bash
+mkdir -p /mnt/dados/pacman/pkg
+```
+Depois, esse caminho foi adicionado no /etc/pacman.conf
+```bash
+CacheDir = /mnt/dados/pacman/pkg/ /var/cache/pacman/pkg/
+```
+2. Analogamente para o Yay:
+```bash
+mkdir -p /mnt/dados/yay_cache
+```
+```bash
+yay --save --builddir /mnt/dados/yay_cache
+```
+
+Ainda não tenho certeza se o sistema irá funcionar tranquilamente, ou se acontecerá algum problema. Em todo caso, todos os arquivos importantes são salvos online e são facilmente recuperáveis!!
+Próximo passo é tentar instalar o Quartus utilizando o wine.
