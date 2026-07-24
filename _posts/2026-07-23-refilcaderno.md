@@ -17,14 +17,14 @@ math: true
 
 ## Tamanhos de Papel (Leitura opcional)
 
-Primeiramente, é interessante (mas não importante) saber como que funcionam os tamanhos de papel, porque a nomenclatura é um pouco contraintuitiva, sendo assim, abaixo está ilusstrado um diagrama representando os diferentes tamanhos e seus nomes 
+Primeiramente, é interessante (mas não importante) saber como que funcionam os tamanhos de papel, porque a nomenclatura é um pouco contraintuitiva, sendo assim, abaixo está ilustrado um diagrama representando os diferentes tamanhos e seus nomes 
 ![Tamanhos de papel ]( assets/img/livro_tuto/papeis.jpg)
 
 A partir disso, esse guia é para caderninhos A6, mas pode ser generalizado pra qualquer tipo, porém, para cadernos A5 talvez a integridade não fique tão firme com o ponto que será mostrado aqui, por conta do tamanho.
 
 ## Preparando as folhas
 
-A partir do diagrama, é possível perceber que uma folha A4, gera 4 folhas A6, nos dando 8 páginas. Sendo assim, a quantidaded de folhas utilizadas varia muito, e depende também do espaço disponível no seu caderno. Eu recomendo 4 folhas A4, que geram 32 páginas utilizáveis, e pelo estilo do caderno, é interessante fazer cadernos com menos folhas para que caibam mais sem que fique tão apertado. 
+A partir do diagrama, é possível perceber que uma folha A4, gera 4 folhas A6, nos dando 8 páginas. Sendo assim, a quantidade de folhas utilizadas varia muito, e depende também do espaço disponível no seu caderno. Eu recomendo 4 folhas A4, que geram 32 páginas utilizáveis, e pelo estilo do caderno, é interessante fazer cadernos com menos folhas para que caibam mais sem que fique tão apertado. 
 
 A partir disso, você deve pegar suas folhas A4 e cortar conforme mostrado na imagem abaixo:
 
@@ -38,7 +38,7 @@ Após isso, alinhando as folhas A5 obtidas, devem ser feitas 5 marcações na Lo
 
 ![Marcas ]( assets/img/livro_tuto/3.jpg)
 
-Assim, usando sua borracha de sacrifício, você vai furar todas as folhas de uma vez com a agulha, nas marcações feitas no passo anterior, coloque a borracha na parte de trás da folha e fure o papel com a agulha, o resultado deve ficar mais ou menos assim:
+Assim, usando sua borracha de sacrifício, você vai furar todas as folhas de uma vez com a agulha, nas marcações feitas no passo anterior. Coloque a borracha na parte de trás da folha e fure o papel com a agulha, o resultado deve ficar mais ou menos assim:
 
 ![Furos ]( assets/img/livro_tuto/4.jpg)
 
