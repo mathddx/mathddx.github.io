@@ -1,10 +1,10 @@
 ---
-title: Telinha
+title: Minha Tela
 icon: fas fa-tv
 order: 5
 ---
 
-<div style="
+<div id="player-tela" style="
   background-color: #1a1a1a; 
   background-image: url('{{ "/assets/img/icons/standby.jpg" | relative_url }}'); 
   background-size: cover; 
@@ -24,8 +24,8 @@ order: 5
   </iframe>
 </div>
 
-<div style="text-align: center; margin-top: 20px;">
-  <a href="https://vdo.ninja/?push=nandinho" target="_blank" style="
+<div style="text-align: center; margin-top: 20px; display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+  <a href="https://vdo.ninja/?push=nandinho&screenshare" target="_blank" style="
     display: inline-block;
     padding: 10px 20px; 
     background-color: #d9534f; 
@@ -37,4 +37,17 @@ order: 5
   ">
     <i class="fas fa-video"></i> Iniciar Compartilhamento
   </a>
+
+  <button onclick="document.getElementById('player-tela').requestFullscreen()" style="
+    padding: 10px 20px; 
+    background-color: #5bc0de; 
+    color: white; 
+    border: none;
+    border-radius: 5px; 
+    font-weight: bold;
+    font-family: sans-serif;
+    cursor: pointer;
+  ">
+    <i class="fas fa-expand"></i> Tela Cheia
+  </button>
 </div>
